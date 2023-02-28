@@ -1,10 +1,22 @@
 
+game();
 
-const playerSelection = "paper";
+
+
+
+function game(){
+
+for(let i=0;i<5;i++){
+const playerSelection = prompt("Enter your choice");
 const computerSelection = getComputerChoice();
-
-
 alert(playRound(playerSelection , computerSelection));
+}
+
+}
+
+
+
+
 
 function getComputerChoice(){
 const selector = ["rock","paper","scissor"];
